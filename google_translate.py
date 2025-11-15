@@ -4,6 +4,8 @@ import os
 import pandas as pd
 from deep_translator import GoogleTranslator
 
+# checking the PR check automation on n8n
+
 ERROR_FILE = "./data/errors.csv"
 
 def safe_translate_batch(translator, texts):
