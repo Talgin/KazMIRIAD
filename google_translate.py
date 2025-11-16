@@ -7,6 +7,8 @@ from deep_translator import GoogleTranslator
 # checking the PR check automation on n8n
 # 2nd try with push
 
+json_ex = {"a": 1}
+
 ERROR_FILE = "./data/errors.csv"
 
 def safe_translate_batch(translator, texts):
