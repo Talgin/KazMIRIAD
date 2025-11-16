@@ -33,6 +33,7 @@ def get_last_id(file):
 
 def translate_csv_with_resume(input_file, output_ru, output_kk, batch_size=50, save_interval=1000):
     df = pd.read_csv(input_file, encoding="utf-8", on_bad_lines="skip", engine="python")
+    print(f"Length of input file: {len(df)}")
 
     # Resume logic based on qa_id
     kk_last = get_last_id(output_kk)
